@@ -39,7 +39,7 @@ body {height: fit-content;
   color: white;
   padding: 2rem;
   margin: 0 auto;
-  
+  align-items: center;
 }
 
 .header h1 {
@@ -61,16 +61,12 @@ body {height: fit-content;
 }
 
 .header button {
-  
   background-color: yellow;
-
   color: red;
- 
-  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   
-  
+  width: 20%;
 }
 .container {
   max-width: 1200px;
@@ -103,12 +99,28 @@ body {height: fit-content;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.sol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  margin: auto;
+  width: 531px;
+height: 449px;
+gap: 0px;
+border-radius: 12px 0px 0px 0px;
+opacity: 0px;
+
+}
+.sag{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .content-section {
   display: flex;
   flex-direction: column;
-  width: 32%;
-  overflow: hidden;
 }
 
 .content-section-image {
