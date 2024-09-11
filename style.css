@@ -1,4 +1,6 @@
+*{
 
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,7 +18,8 @@
 }
 
 body {height: fit-content;
-  background-color: white;
+  background: #FAF7F2;
+  
   margin: 0;
   max-width: 1200px;
   margin: 20px auto;
@@ -34,7 +37,8 @@ body {height: fit-content;
   display: flex;
   flex-direction: column;
   color: white;
-  
+  padding: 2rem;
+  margin: 0 auto;
   
 }
 
@@ -60,7 +64,7 @@ body {height: fit-content;
   
   background-color: yellow;
 
-  color: black;
+  color: red;
  
   padding: 10px 20px;
   border: none;
@@ -104,20 +108,24 @@ body {height: fit-content;
   display: flex;
   flex-direction: column;
   width: 32%;
+  overflow: hidden;
 }
 
 .content-section-image {
   width: 100%;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .content-section-image img {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .content-section-text {
   text-align: center;
+  overflow: hidden;
 }
 
 .content-section-text h2 {
@@ -152,11 +160,36 @@ body {height: fit-content;
   font-weight: bold;
 }
  
-.cubuk {
+/** bos .cubuk { 
   display: flex;
   justify-content: space-between;
   align-items: center;
+} */
+
+.button-container { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9px;
+  color: yellow;
+  border-color: #007bff;
 }
+
+.button2 {
+  background-color: #5F5F5F;
+  
+  border-radius: 11px;
+  width: Hug (146.72px)px;
+height: Hug (66px)px;
+padding: 12px 20px 12px 20px;
+gap: 10px;
+
+
+}
+.button-container :hover{
+  background: black;
+}
+
 
 .products {
   display: flex;
@@ -203,6 +236,7 @@ display: inline-table   ;
   max-width: 1200px;
   margin: 20px auto;
   padding: 10px 0;
+  padding: 2rem;
   
 }
 
@@ -235,11 +269,10 @@ display: inline-table   ;
 .instagram-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 10px
 }
 
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .emoji{display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +289,7 @@ display: inline-table   ;
   align-items: center;
   justify-content: center;
   }
-  .cubuk{
+  .button-container{
     display: flex;
   flex-direction: column;
   align-items: center;
