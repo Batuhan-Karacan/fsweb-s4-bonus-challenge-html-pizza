@@ -17,22 +17,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {height: fit-content;
-  background: #FAF7F2;
-  
+body {
+  height: fit-content;
+  background: beige;
+  align-items: center;
   margin: 0;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 10px 0;
   font-family: sans-serif;
   color: black;
+  
 }
 
 .header {
-  background-image:  url("./public/assets/iteration-1/home-banner.png");
+  background-image:  url("./assets/iteration-1/home-banner.png");
   background-size: cover;
   text-align: center;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -40,6 +39,7 @@ body {height: fit-content;
   padding: 2rem;
   margin: 0 auto;
   align-items: center;
+  width: 100%;
 }
 
 .header h1 {
@@ -68,6 +68,10 @@ body {height: fit-content;
   
   width: 20%;
 }
+.help{
+  display: flex;
+  flex-direction: column;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -94,10 +98,13 @@ body {height: fit-content;
   margin-right: 10px;
 }
 
-.content {
+.content { /** kardlar */
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
   margin-bottom: 20px;
+  width: auto;
+  height: auto;
 }
 .sol{
   display: flex;
@@ -105,17 +112,17 @@ body {height: fit-content;
   justify-content: center;
   padding: 3rem;
   margin: auto;
-  width: 531px;
-height: 449px;
-gap: 0px;
-border-radius: 12px 0px 0px 0px;
-opacity: 0px;
+  width: 50%;
+  border-radius: 2rem;
 
 }
+
 .sag{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  width: 50%;
+  
 }
 
 .content-section {
@@ -123,21 +130,28 @@ opacity: 0px;
   flex-direction: column;
 }
 
-.content-section-image {
-  width: 100%;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
 
-.content-section-image img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
 
-.content-section-text {
+.content-section-text1 {
+  background-image: url(./assets/iteration-2/cta/kart-1.png);
   text-align: center;
-  overflow: hidden;
+  background-size: cover;
+  background-position: center top;
+  
+}
+
+.content-section-text2 {
+  background-image: url(./assets/iteration-2/cta/kart-2.png);
+  text-align: center;
+  background-size: cover;
+  background-position: center top;
+  
+}
+.content-section-text3 {
+  background-image: url(./assets/iteration-2/cta/kart-3.png);
+ background-size: cover;
+  text-align: center;
+  background-position: center top;
 }
 
 .content-section-text h2 {
@@ -160,6 +174,7 @@ opacity: 0px;
   cursor: pointer;
 }
 
+
 .title {
   text-align: center;
   margin-bottom: 20px;
@@ -172,11 +187,7 @@ opacity: 0px;
   font-weight: bold;
 }
  
-/** bos .cubuk { 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
 
 .button-container { 
   display: flex;
@@ -203,26 +214,42 @@ gap: 10px;
 }
 
 
-.products {
-  display: flex;
-  justify-content: space-between;
+.products { /** 3lü yemek resmi */
+ display: flex;
+ flex-direction: row;
+  
+  align-content: center;
+  justify-content: center;
+ 
+  
+  
 }
 
 .products-item {
-  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 20px;
+ 
+  
+  
 }
 
 .products-item-image {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .products-item-image img {
-  width: 100%;
+  width: 75%;
   height: auto;
+  align-items: center;
 }
 
 .products-item-text {
@@ -300,6 +327,17 @@ display: inline-table   ;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .sol{
+
+  }
+  .sag{
+    justify-content: space-between;
+    gap: 5 5 5 5;
+
   }
   .button-container{
     display: flex;
